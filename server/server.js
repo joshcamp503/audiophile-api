@@ -13,9 +13,10 @@ const username = `joshcamp503`
 const password = `mongodbpassword`
 
 // connect to mongodb
+const PORT = process.env.PORT || 5000
 const dbURI = `mongodb+srv://joshcamp503:mongodbpassword@cluster0.hogdo.mongodb.net/audiophile?retryWrites=true&w=majority`
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) => app.listen(3001, () => console.log('connected')))
+  .then((result) => app.listen(PORT, () => console.log('connected')))
   .catch((err) => console.log(err))
 
 // routes
