@@ -9,6 +9,7 @@ app.use(cors());
 app.use(express.json());
 // app.use(Router)
 
+// I know this is not very secure, that's why the password is meh
 const username = `joshcamp503`
 const password = `mongodbpassword`
 
