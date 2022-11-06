@@ -5,7 +5,9 @@ const Product = require("./models/product")
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://joshcamp.dev/audiophile'
+}));
 app.use(express.json());
 // app.use(Router)
 
